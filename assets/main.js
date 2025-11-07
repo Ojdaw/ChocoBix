@@ -2,6 +2,7 @@ let letter = 0;
 const title = "ChocoBix";
 const textTitle = document.getElementById("title");
 
+
 function typeTitle() {
   if (letter < title.length) {
     textTitle.textContent = title.substring(0, letter + 1);
