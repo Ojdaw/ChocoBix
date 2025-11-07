@@ -1,16 +1,33 @@
+/* Page background */
 body {
-    background: lightskyblue;
+  background: lightskyblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* centers horizontally */
+  justify-content: center; /* centers vertically */
+  height: 100vh;           /* full viewport height */
+  margin: 0;               /* remove default margin */
+  font-family: Arial, sans-serif;
+  text-align: center;
 }
 
+/* Title styling */
 .title {
-    font: bold;
-    color: coral
-}
-.mainwriting {
-  width: 320px;
-  height: 50px;
-  padding: 10px;
-  border: 5px #d4e0a6;
+  font-weight: bold;
+  font-size: 3rem;
+  color: coral;
   margin: 0;
+}
+
+/* Paragraph box styling */
+.mainwriting {
+  max-width: 500px;
+  padding: 15px;
+  border: 5px solid #d4e0a6;
   background: #d4e0a6;
+  border-radius: 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  margin-top: 20px;
 }
